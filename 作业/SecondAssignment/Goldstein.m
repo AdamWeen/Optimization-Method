@@ -22,31 +22,31 @@ function [alpha, xk, f, k] = Goldstein(fun, grid, x0, dk)
 	alpha = 1; 	% 初始步长为 1
 	k = 0; 		% 统计迭代次数
     a = 0; b = inf; % 二分法确定 alpha 值
-	gk = feval(grid, x0);	% x0处的梯度值
-	fk = feval(fun, x0 + alpha * dk); 	% 函数在下一个迭代点处的目标函数值
-	l1 = feval(fun, x0) + c * alpha * gk' * dk; 	% Armjio准则
-    l2 = feval(fun, x0) + (1 - c) * alpha * gk' * dk; 	% Armjio准则的补全
+	gk = grid(x0(1),x0(2));	% x0处的梯度值
+	fk = fun(x0(1) + alpha * dk,x0(2) + alpha * dk); 	% 函数在下一个迭代点处的目标函数值
+	l1 = fun(x0(1),x0(2)) + c * alpha * gk' * dk; 	% Armjio准则
+    l2 = fun(x0(1),x0(2)) + (1 - c) * alpha * gk' * dk; 	% Armjio准则的补全
 	while true
 	    if fk > l1
             k = k + 1;
             b = alpha;
             alpha = (a + b) / 2;
-            fk = feval(fun, x0 + alpha * dk);
-            l1 = feval(fun, x0) + c * alpha * gk' * dk;
-            l2 = feval(fun, x0) + (1 - c) * alpha * gk' * dk;
+            fk = fun(x0(1) + alpha * dk, x0(2) + alpha * dk);
+            l1 = fun(x0(1), x0(2)) + c * alpha * gk' * dk;
+            l2 = fun(x0(1), x0(2)) + (1 - c) * alpha * gk' * dk;
             continue;
         end
         if fk < l2
             k = k + 1;
             a = alpha;
             alpha = min([2 * alpha, (a + b) / 2]);
-            fk = feval(fun, x0 + alpha * dk);
-            l1 = feval(fun, x0) + c * alpha * gk' * dk;
-            l2 = feval(fun, x0) + (1 - c) * alpha * gk' * dk;
+            fk = fun(x0(1) + alpha * dk, x0(2) + alpha * dk);
+            l1 = fun(x0(1), x0(2)) + c * alpha * gk' * dk;
+            l2 = fun(x0(1), x0(2)) + (1 - c) * alpha * gk' * dk;
             continue;
         end
         break;
 	end
 	xk = x0 + alpha * dk;	% 下降点
-	f = feval(fun, xk);	    % 下降点处函数值
+	f = fun(xk(1), xk(2));	    % 下降点处函数值
 end

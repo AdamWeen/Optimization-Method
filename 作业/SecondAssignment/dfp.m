@@ -1,0 +1,39 @@
+function [x,val,k]=dfp(fun,gfun,x0)
+%功能：用DFP算法求解无约束问题
+%输出：x，val，k分别表示近似最优解，近似最优值和迭代次数
+%输入:x0,fun,gfun分别表示初始点，目标函数和目标函数的梯度
+k=0;
+maxk=5000;
+rho=0.55;
+sigma=0.4;
+e=1e-5;%精度
+n=length(x0);
+Hk=eye(n);
+while(k<maxk)
+    gk=feval(gfun,x0);%求梯度
+    if(norm(gk)<=e),break;end  %判断是否满足停止迭代
+    dk=-Hk*gk;%确定搜索方向，这个公式课本有
+    mk=0;
+    m=0;
+    %用Armijo准则确定步长
+    while(m<20)
+        if(feval(fun,x0+rho^m*dk)<feval(fun,x0)+sigma*rho^m*gk'*dk)
+            mk=m;
+            break;
+        end
+            m=m+1;
+    end
+    x=x0+dk*rho^mk;%根据初始点，搜索方向和步长求出新的搜索点
+    g=feval(gfun,x);%这个就是新的初始点的梯度
+    sk=x-x0;%新的点减去原来的点
+    yk=g-gk;%新的点的梯度
+    %更新Hk
+    if(sk'*yk>0)
+        Hk=Hk-(Hk*yk*yk'*Hk)/(yk'*Hk*yk)+(sk*sk')/(sk'*yk);%公式
+    end
+    x0=x;
+    k=k+1;
+end
+x=x0;%break跳出后输出x
+val=feval(fun,x);
+end
