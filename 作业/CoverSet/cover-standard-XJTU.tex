@@ -1,0 +1,105 @@
+\documentclass[UTF8,12pt]{ctexart}
+\ctexset{section={name={},number=\chinese{section}}}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{abstract}
+\usepackage{geometry}
+\usepackage{amsmath}
+\numberwithin{equation}{section}%公式按章节编号
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{newproof}
+\usepackage{bm}%加粗公式的包，在需要加粗的公式前面加\bm
+%以下代码以及listings包为添加有中文注释的latex代码的模块
+\usepackage{listings}
+  \usepackage{xcolor}
+  \lstset{tabsize=4, %
+  frame=shadowbox, %把代码用带有阴影的框圈起来
+  commentstyle=\color{red!50!green!50!blue!50},%浅灰色的注释
+  rulesepcolor=\color{red!20!green!20!blue!20},%代码块边框为淡青色
+  keywordstyle=\color{blue!90}\bfseries, %代码关键字的颜色为蓝色，粗体
+  showstringspaces=false,%不显示代码字符串中间的空格标记
+  stringstyle=\ttfamily, % 代码字符串的特殊格式
+  keepspaces=true, %
+  breakindent=22pt, %
+  numbers=left,%左侧显示行号
+  stepnumber=1,%
+  numberstyle=\tiny, %行号字体用小号
+  basicstyle=\footnotesize, %
+  showspaces=false, %
+  flexiblecolumns=true, %
+  breaklines=true, %对过长的代码自动换行
+  breakautoindent=true,%
+  breakindent=4em, %
+  escapebegin=\begin{CJK*}{GBK}{hei},escapeend=\end{CJK*},
+  aboveskip=1em, %代码块边框
+  fontadjust,
+  captionpos=t,
+  framextopmargin=2pt,framexbottommargin=2pt,abovecaptionskip=-3pt,belowcaptionskip=3pt,
+  xleftmargin=4em,xrightmargin=4em, % 设定listing左右的空白
+  texcl=true,
+  % 设定中文冲突，断行，列模式，数学环境输入，listing数字的样式
+  extendedchars=false,columns=flexible,mathescape=true
+  % numbersep=-1em
+}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{hyperref}%ref引用，可以定义不同引用的颜色
+\hypersetup{colorlinks=true,
+            linkcolor=black,
+            anchorcolor=blue,
+            citecolor=blue}
+\usepackage[natbibapa,nodoi]{apacite}
+
+%% 写算法伪代码或者流程的前期准备
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}  % Use Input in the format of Algorithm
+\renewcommand{\algorithmicensure}{\textbf{Output:}} % Use Output in the format of Algorithm
+\renewcommand{\contentsname}{\hspace*{\fill}目\quad 录\hspace*{\fill}}
+%跨页伪代码↓
+\usepackage{algpseudocode} 
+\makeatletter
+\newenvironment{breakablealgorithm}
+  {% \begin{breakablealgorithm}
+   \begin{center}
+     \refstepcounter{algorithm}% New algorithm
+     \hrule height.8pt depth0pt \kern2pt% \@fs@pre for \@fs@ruled
+     \renewcommand{\caption}[2][\relax]{% Make a new \caption
+       {\raggedright\textbf{\ALG@name~\thealgorithm} ##2\par}%
+       \ifx\relax##1\relax % #1 is \relax
+         \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##2}%
+       \else % #1 is not \relax
+         \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##1}%
+       \fi
+       \kern2pt\hrule\kern2pt
+     }
+  }{% \end{breakablealgorithm}
+     \kern2pt\hrule\relax% \@fs@post for \@fs@ruled
+   \end{center}
+  }
+\makeatother
+
+\newtheorem{Definition}{\hspace{2em}定义}
+\newtheorem{theorem}{\hspace{2em}定理}
+\newtheorem{lemma}{\hspace{2em}引理}
+\newtheorem{Proof}{\hspace{2em}证明}%*意为去掉编号
+\newtheorem{example}{\hspace{2em}例}
+%用于自动替换中文标点为英文符号
+\catcode`\。=\active
+\newcommand{。}{. }
+\catcode`\，=\active
+\newcommand{，}{, }
+
+\setlength{\parindent}{2em}%首行缩进
+\lstset{extendedchars=false}%解决代码跨页时，章节标题，页眉等汉字不显示的问题
+
+\geometry{left=3.0cm,right=3.0cm,top=2.54cm,bottom=2.54cm}
+\title{{\heiti\fontsize{40}{15}\selectfont 最优化方法上级报告}\\[1em]
+\fontsize{25}{15}\selectfont \textbf{}\\[7em]}
+\author{\fontsize{20}{20}\selectfont \textit{信计}91 \quad \textit{闻逊之}\\[1em]
+\fontsize{20}{20}\selectfont \textit{学号}:2193410365\\[2.5em]}
+\date{\Large\today\\[1em]\Large {(2021-2022春季学期)}}
+\linespread{1.2}
+\pagestyle{plain}
