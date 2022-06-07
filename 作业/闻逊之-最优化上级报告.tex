@@ -9,9 +9,22 @@
 
     \newpage
     \section{作业4第一题}
+    分别用0.618法和三点二次插值法求$ \phi(\alpha) = 1-\alpha e^{-\alpha^2}  $的
+    极小点，初始区间取$ [0,1] ,\epsilon = 0.001$.
 
-
-    % \renewcommand{\refname}{参考文献}
-    % \bibliography{reference}
-    % \bibliographystyle{apacite}
+    \section{作业7第三题}
+    编写SR1方法，DFP方法和BFGS方法程序并提供数值实验结果报告。考虑最优化问题：
+    \[
+        min\sum \limits_{i=1}^m r_i^2(\bm{x}) 
+    \] 
+    其中，$ r_i(\bm{x}) $由Watson函数定义：
+    \[
+        r_i(\bm{x}) = \sum \limits_{j=2}^n(j-1)x_jt_i^{j-2}-(\sum\limits_{j=1}^n 
+        x_jt_i^{j-1} )^2-1  
+    \]  
+    其中$ t_i = \frac{i}{29} \quad 1\leq i\leq 29, r_{30}(\bm{x}) = x_1, r_{31} = x_2-x_1^2-1, 2\leq n
+    \leq 31,m =31 $，初始值可选为$ x^{(0)} = (0,\cdots,0)^T  $  
+    \renewcommand{\refname}{参考文献}
+    \bibliography{reference}
+    \bibliographystyle{apacite}
 \end{document}
