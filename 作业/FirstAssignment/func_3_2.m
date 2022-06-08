@@ -39,9 +39,8 @@ kline(k)=k;error(k) = abs(f(x2)-f(x));
 %删除0值
 kline(kline==0)=[];
 error(error==0)=[];
-%绘图
 plot(kline,error,'-or');
 grid on;
-title("Distance between selected points");
+title("Distance between selected points-三点二次");
 xlabel('Iterations');
 ylabel('Distance');

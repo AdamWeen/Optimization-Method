@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.13)  6 JUN 2022 23:33
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.13)  8 JUN 2022 15:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -331,6 +331,42 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
 LaTeX Font Info:    Redeclaring math symbol \square on input line 58.
+) (d:/Applications/texlive/2022/texmf-dist/tex/latex/ntheorem/ntheorem.sty
+Style `ntheorem', Version 1.33 <2011/08/15>
+Package: ntheorem 2011/08/15 1.33
+(d:/Applications/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\theorem@style=\toks23
+\theorem@@style=\toks24
+\theorembodyfont=\toks25
+\theoremnumbering=\toks26
+\theorempreskipamount=\skip72
+\theorempostskipamount=\skip73
+\theoremframepreskipamount=\skip74
+\theoremframepostskipamount=\skip75
+\theoreminframepreskipamount=\skip76
+\theoreminframepostskipamount=\skip77
+\theorem@preskip=\toks27
+\theorem@postskip=\toks28
+\theorem@framepreskip=\toks29
+\theorem@framepostskip=\toks30
+\theorem@inframepreskip=\toks31
+\theorem@inframepostskip=\toks32
+\theoremindent=\dimen195
+\theorem@indent=\dimen196
+\theoremrightindent=\dimen197
+\theorem@rightindent=\dimen198
+\theoremheaderfont=\toks33
+\theoremseparator=\toks34
+\theoremprework=\toks35
+\theorempostwork=\toks36
+\theoremsymbol=\toks37
+\qedsymbol=\toks38
+\theoremkeyword=\toks39
+\qedsymbol=\toks40
+\thm@topsep=\skip78
+\thm@topsepadd=\skip79
 ) (d:/Applications/texlive/2022/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
@@ -340,32 +376,6 @@ Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
 Package bm Info: No bold for \U/msa/m/n, using \pmb.
 Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
-) (d:/Applications/texlive/2022/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count307
-\lst@gtempboxa=\box55
-\lst@token=\toks23
-\lst@length=\count308
-\lst@currlwidth=\dimen195
-\lst@column=\count309
-\lst@pos=\count310
-\lst@lostspace=\dimen196
-\lst@width=\dimen197
-\lst@newlines=\count311
-\lst@lineno=\count312
-\lst@maxwidth=\dimen198
- (d:/Applications/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count313
-\lst@skipnumbers=\count314
-\lst@framebox=\box56
-) (d:/Applications/texlive/2022/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2020/03/24 1.8d listings configuration
-))
-Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (d:/Applications/texlive/2022/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
-Package: xeCJK-listings 2021/12/12 v3.8.8 xeCJK patch file for listings
-\l__xeCJK_listings_max_char_int=\count315
-\l__xeCJK_listings_flag_int=\count316
 ) (d:/Applications/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
  (d:/Applications/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -380,20 +390,44 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+) (d:/Applications/texlive/2022/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count307
+\lst@gtempboxa=\box55
+\lst@token=\toks41
+\lst@length=\count308
+\lst@currlwidth=\dimen199
+\lst@column=\count309
+\lst@pos=\count310
+\lst@lostspace=\dimen256
+\lst@width=\dimen257
+\lst@newlines=\count311
+\lst@lineno=\count312
+\lst@maxwidth=\dimen258
+ (d:/Applications/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count313
+\lst@skipnumbers=\count314
+\lst@framebox=\box56
+) (d:/Applications/texlive/2022/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (d:/Applications/texlive/2022/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
+Package: xeCJK-listings 2021/12/12 v3.8.8 xeCJK patch file for listings
+\l__xeCJK_listings_max_char_int=\count315
+\l__xeCJK_listings_flag_int=\count316
 ) (d:/Applications/texlive/2022/texmf-dist/tex/latex/algorithms/algorithm.sty
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
  (d:/Applications/texlive/2022/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count317
-\float@exts=\toks24
+\float@exts=\toks42
 \float@box=\box57
-\@float@everytoks=\toks25
+\@float@everytoks=\toks43
 \@floatcapt=\box58
-) (d:/Applications/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\@float@every@algorithm=\toks26
+\@float@every@algorithm=\toks44
 \c@algorithm=\count318
 ) (d:/Applications/texlive/2022/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
@@ -404,13 +438,13 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@line=\count319
 \c@ALG@rem=\count320
 \c@ALG@nested=\count321
-\ALG@tlm=\skip72
-\ALG@thistlm=\skip73
+\ALG@tlm=\skip80
+\ALG@thistlm=\skip81
 \c@ALG@Lnr=\count322
 \c@ALG@blocknr=\count323
 \c@ALG@storecount=\count324
 \c@ALG@tmpcounter=\count325
-\ALG@tmplength=\skip74
+\ALG@tmplength=\skip82
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (d:/Applications/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -440,7 +474,7 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (d:/Applications/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen199
+\@linkdim=\dimen259
 \Hy@linkcounter=\count326
 \Hy@pagecounter=\count327
  (d:/Applications/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -468,15 +502,15 @@ Package hyperref Info: Bookmarks ON on input line 4390.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4749.
-\XeTeXLinkMargin=\dimen256
+\XeTeXLinkMargin=\dimen260
  (d:/Applications/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (d:/Applications/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count330
-\Field@Width=\dimen257
-\Fld@charsize=\dimen258
+\Field@Width=\dimen261
+\Fld@charsize=\dimen262
 Package hyperref Info: Hyper figures OFF on input line 6027.
 Package hyperref Info: Link nesting OFF on input line 6032.
 Package hyperref Info: Hyper index ON on input line 6035.
@@ -515,25 +549,25 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
-\Hy@SectionHShift=\skip75
+\Hy@SectionHShift=\skip83
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 54.
+Package hyperref Info: Option `colorlinks' set `true' on input line 50.
  (d:/Applications/texlive/2022/texmf-dist/tex/latex/apacite/apacite.sty
 Package: apacite 2013/07/21 v6.03 APA citation
 \c@BibCnt=\count338
-\bibleftmargin=\skip76
-\bibindent=\skip77
-\bibparsep=\skip78
-\bibitemsep=\skip79
-\biblabelsep=\skip80
+\bibleftmargin=\skip84
+\bibindent=\skip85
+\bibparsep=\skip86
+\bibitemsep=\skip87
+\biblabelsep=\skip88
 ) (d:/Applications/texlive/2022/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip81
-\bibsep=\skip82
+\bibhang=\skip89
+\bibsep=\skip90
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count339
 )
-LaTeX Info: Redefining \BBA on input line 56.
+LaTeX Info: Redefining \BBA on input line 52.
 \c@Definition=\count340
 \c@theorem=\count341
 \c@lemma=\count342
@@ -717,23 +751,80 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-] (./闻逊之-最优化上级报告.toc)
-\tf@toc=\write4
-\openout4 = `闻逊之-最优化上级报告.toc'.
-
+]
+File: 第一题-Func.pdf Graphic file (type pdf)
+<use 第一题-Func.pdf>
  [2]
+File: 第一题-0.618.pdf Graphic file (type pdf)
+<use 第一题-0.618.pdf>
+ (d:/Applications/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 38.
+
+Package fontspec Info: Could not resolve font "Microsoft YaHei Bold/I" (it
+(fontspec)             probably doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "Microsoft YaHei/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Font family 'MicrosoftYaHei(0)' created for font
+(fontspec)             'Microsoft YaHei' with options
+(fontspec)             [Script={CJK},BoldFont={* Bold}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Microsoft
+(fontspec)             YaHei/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Microsoft YaHei
+(fontspec)             Bold/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Microsoft
+(fontspec)             YaHei/BI/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+ (./FirstAssignment/func_618.m [3] [4])
+File: 第一题-三点二次.pdf Graphic file (type pdf)
+<use 第一题-三点二次.pdf>
+ (./FirstAssignment/func_3_2.m [5]) [6]
+File: 第二题-SR1-func.pdf Graphic file (type pdf)
+<use 第二题-SR1-func.pdf>
+File: 第二题-SR1-grad.pdf Graphic file (type pdf)
+<use 第二题-SR1-grad.pdf>
+ [7]
+File: 第二题-DFP-func.pdf Graphic file (type pdf)
+<use 第二题-DFP-func.pdf>
+File: 第二题-DFP-grad.pdf Graphic file (type pdf)
+<use 第二题-DFP-grad.pdf>
+File: 第二题-BFGS-func.pdf Graphic file (type pdf)
+<use 第二题-BFGS-func.pdf>
+File: 第二题-BFGS-grad.pdf Graphic file (type pdf)
+<use 第二题-BFGS-grad.pdf>
+ [8] (./SecondAssignment/Newton_Watson.m [9]
+Overfull \hbox (165.76721pt too wide) in paragraph at lines 53--54
+[][][][][][][][][]  
+ []
+
+[10])
 No file 闻逊之-最优化上级报告.bbl.
-[3] (./闻逊之-最优化上级报告.aux)
+\tf@thm=\write4
+\openout4 = `闻逊之-最优化上级报告.thm'.
+
+[11] (./闻逊之-最优化上级报告.aux)
 Package rerunfilecheck Info: File `闻逊之-最优化上级报告.out' has not changed.
-(rerunfilecheck)             Checksum: 500E53F28DBD432610464173842E2F81;176.
+(rerunfilecheck)             Checksum: DF611EA4E4C288562BDD3AF29EDCA5B8;1078.
  ) 
 Here is how much of TeX's memory you used:
- 18875 strings out of 478103
- 389959 string characters out of 5851668
- 719549 words of memory out of 5000000
- 39201 multiletter control sequences out of 15000+600000
- 484302 words of font info for 112 fonts, out of 8000000 for 9000
+ 20020 strings out of 478103
+ 407596 string characters out of 5851668
+ 1008001 words of memory out of 5000000
+ 40298 multiletter control sequences out of 15000+600000
+ 484406 words of font info for 125 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 94i,7n,100p,487b,388s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,8n,100p,487b,1783s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 闻逊之-最优化上级报告.pdf (3 pages).
+Output written on 闻逊之-最优化上级报告.pdf (11 pages).

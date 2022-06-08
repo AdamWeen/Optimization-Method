@@ -53,7 +53,7 @@ error(error==0)=[];
 %绘图
 plot(kline,error,'-or');
 grid on;
-title("Distance between selected points");
+title("Distance between selected points-0.618");
 xlabel('Iterations');
 ylabel('Distance');
 

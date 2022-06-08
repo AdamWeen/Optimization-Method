@@ -1,18 +1,60 @@
 \input{D:/Adam_Wen/数学/最优化方法/作业/CoverSet/cover-standard-XJTU.tex}
 \begin{document}
     \input{D:/Adam_Wen/数学/最优化方法/作业/CoverSet/SchoolIcon-XJTU.tex}
-
+    
     \maketitle
     \newpage
 
-    \tableofcontents
 
     \newpage
     \section{作业4第一题}
+    \subsection{题目阐述}
     分别用0.618法和三点二次插值法求$ \phi(\alpha) = 1-\alpha e^{-\alpha^2}  $的
     极小点，初始区间取$ [0,1] ,\epsilon = 0.001$.
+    \subsection{绘制函数图像}
+    $ \phi(\alpha) = 1-\alpha e^{-\alpha^2}  $的函数图像如图\ref{1_Func}所示，可见函数
+    呈高-低-高形状，在目标区间内是单峰函数，满足0.618法以及三点二次插值法的应用条件。
+    \par
+    容易算出函数的理论极小点为$ \frac{\sqrt{2}}{2} $。 
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width = 14cm]{第一题-Func.pdf}
+        \caption[]{目标函数图像}\label{1_Func}
+    \end{figure}
+    \newpage
+    \subsection{0.618法结果及程序}
+    0.618法求得的结果为$ \alpha^*=0.7069965 $,其迭代次数与误差距离的图像如图\ref{1_0.618}
+    所示.
+    \begin{figure}[htbp!]
+        \centering
+        \includegraphics[width = 14cm]{第一题-0.618.pdf}
+        \caption[]{0.618法误差收敛图像}\label{1_0.618}
+    \end{figure} 
+
+    \begin{center}
+            \textbf{0.618法matlab代码}
+    \end{center}
+
+    \lstinputlisting[language=matlab]{FirstAssignment/func_618.m}
+
+    \subsection{三点二次插值法结果及程序}
+    三点二次插值法求得的结果为$ \alpha^*=0.69559476 $,其迭代次数与误差距离额图像如图\ref{1_3_2}所示
+
+    \begin{figure}[htbp!]
+        \centering
+        \includegraphics[width = 14cm]{第一题-三点二次.pdf}
+        \caption[]{三点二次插值法误差收敛图像}\label{1_3_2}
+    \end{figure} 
+
+    \begin{center}
+        \textbf{三点二次插值法matlab代码}
+    \end{center}
+
+    \lstinputlisting[language=matlab]{FirstAssignment/func_3_2.m}
+
 
     \section{作业7第三题}
+    \subsection{题目阐述}
     编写SR1方法，DFP方法和BFGS方法程序并提供数值实验结果报告。考虑最优化问题：
     \[
         min\sum \limits_{i=1}^m r_i^2(\bm{x}) 
@@ -24,6 +66,68 @@
     \]  
     其中$ t_i = \frac{i}{29} \quad 1\leq i\leq 29, r_{30}(\bm{x}) = x_1, r_{31} = x_2-x_1^2-1, 2\leq n
     \leq 31,m =31 $，初始值可选为$ x^{(0)} = (0,\cdots,0)^T  $  
+
+    考虑到计算机性能等问题,下文展示$ n=2 $时的图像结果与$ n=3 $时的数值结果. 
+    
+    算法采用Armijo准则确定搜索步长,$ \rho = 0.001 $ .
+    \subsection{SR1法}
+    当$ n=2 $时,函数值的更新如图\ref{SR1-func}所示,其梯度数值的变化如图\ref{SR1-grad}所示:
+    \par
+    最终迭代次数为14次,极小点为$ (-0.50137,1.0736) $ ,函数值为$ 0.54661. $ 
+    \begin{figure}[htbp!]
+        \centering
+        \subfigure[SR1法迭代路径]{
+            \centering
+            \includegraphics[width=7.5cm]{第二题-SR1-func.pdf}\label{SR1-func}}
+            \subfigure[SR1法梯度数值变化]{
+        \centering
+        \includegraphics[width=7.5cm]{第二题-SR1-grad.pdf}\label{SR1-grad}}
+        \caption{SR1法结果图,$ n=2 $ }
+    \end{figure}
+
+    当$ n=3 $时,最终迭代次数为$23$ 次,极小点为$ (-0.37573,0.92779,0.17164) $ ,函数值为$ 0.4714 $ .
+
+    \subsection{DFP法}
+    当$ n=2 $时,函数值的更新如图\ref{DFP-func}所示,其梯度数值的变化如图\ref{DFP-grad}所示:
+    \par
+    最终迭代次数为58次,极小点为$ (-0.50137,1.0736) $ ,函数值为$ 0.54661. $ 
+    \begin{figure}[htbp!]
+        \centering
+        \subfigure[DFP法迭代路径]{
+            \centering
+            \includegraphics[width=7.5cm]{第二题-DFP-func.pdf}\label{DFP-func}}
+            \subfigure[DFP法梯度数值变化]{
+        \centering
+        \includegraphics[width=7.5cm]{第二题-DFP-grad.pdf}\label{DFP-grad}}
+        \caption{DFP法结果图,$ n=2 $ }
+    \end{figure}
+
+    当$ n=3 $时,最终迭代次数为$ 386 $ 次,极小点为$ (-0.37573,0.92779,0.17164) $ ,函数值为$ 0.4714 $ .
+
+    \subsection{BGFS法}
+    当$ n=2 $时,函数值的更新如图\ref{BFGS-func}所示,其梯度数值的变化如图\ref{BFGS-grad}所示:
+    \par
+    最终迭代次数为15次,极小点为$ (-0.50137,1.0736) $ ,函数值为$ 0.54661. $ 
+    \begin{figure}[htbp!]
+        \centering
+        \subfigure[BFGS法迭代路径]{
+            \centering
+            \includegraphics[width=7.5cm]{第二题-BFGS-func.pdf}\label{BFGS-func}}
+            \subfigure[BFGS法梯度数值变化]{
+        \centering
+        \includegraphics[width=7.5cm]{第二题-BFGS-grad.pdf}\label{BFGS-grad}}
+        \caption{BFGS法结果图,$ n=2 $ }
+    \end{figure}
+
+    当$ n=3 $时,最终迭代次数为$ 52 $ 次,极小点为$ (-0.37573,0.92779,0.17164) $ ,函数值为$ 0.4714 $ .
+
+    \subsection{上机程序}
+    \begin{center}
+        \textbf{SR1,DFP,BFGS法上机代码}
+    \end{center}
+
+    \lstinputlisting[language=matlab]{SecondAssignment/Newton_Watson.m}
+
     \renewcommand{\refname}{参考文献}
     \bibliography{reference}
     \bibliographystyle{apacite}
