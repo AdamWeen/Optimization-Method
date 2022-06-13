@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.13)  8 JUN 2022 15:58
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.13)  8 JUN 2022 16:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/Adam_Wen/数学/最优化方法/作业/闻逊之-最优化上级报告
-(d:/Adam_Wen/数学/最优化方法/作业/闻逊之-最优化上级报告.tex
+**d:/Adam_Wen/数学/最优化方法/作业/闻逊之-最优化上机报告
+(d:/Adam_Wen/数学/最优化方法/作业/闻逊之-最优化上机报告.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (d:/Adam_Wen/数学/最优化方法/作业/CoverSet/cover-standard-XJTU.tex (d:/Applications/texlive/2022/texmf-dist/tex/latex/ctex/ctexart.cls (d:/Applications/texlive/2022/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
 File: ctexbackend.cfg 2021/12/12 v2.5.8 Backend configuration file (CTEX)
@@ -573,8 +573,8 @@ LaTeX Info: Redefining \BBA on input line 52.
 \c@lemma=\count342
 \c@Proof=\count343
 \c@example=\count344
-) (./闻逊之-最优化上级报告.aux)
-\openout1 = `闻逊之-最优化上级报告.aux'.
+) (./闻逊之-最优化上机报告.aux)
+\openout1 = `闻逊之-最优化上机报告.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
@@ -701,9 +701,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 2.
 LaTeX Info: Redefining \pageref on input line 2.
 LaTeX Info: Redefining \nameref on input line 2.
- (./闻逊之-最优化上级报告.out) (./闻逊之-最优化上级报告.out)
+ (./闻逊之-最优化上机报告.out) (./闻逊之-最优化上机报告.out)
 \@outlinefile=\write3
-\openout3 = `闻逊之-最优化上级报告.out'.
+\openout3 = `闻逊之-最优化上机报告.out'.
 
 \c@maskedRefs=\count347
  (d:/Applications/texlive/2022/texmf-dist/tex/latex/apacite/english.apc
@@ -810,12 +810,12 @@ Overfull \hbox (165.76721pt too wide) in paragraph at lines 53--54
  []
 
 [10])
-No file 闻逊之-最优化上级报告.bbl.
+No file 闻逊之-最优化上机报告.bbl.
 \tf@thm=\write4
-\openout4 = `闻逊之-最优化上级报告.thm'.
+\openout4 = `闻逊之-最优化上机报告.thm'.
 
-[11] (./闻逊之-最优化上级报告.aux)
-Package rerunfilecheck Info: File `闻逊之-最优化上级报告.out' has not changed.
+[11] (./闻逊之-最优化上机报告.aux)
+Package rerunfilecheck Info: File `闻逊之-最优化上机报告.out' has not changed.
 (rerunfilecheck)             Checksum: DF611EA4E4C288562BDD3AF29EDCA5B8;1078.
  ) 
 Here is how much of TeX's memory you used:
@@ -827,4 +827,4 @@ Here is how much of TeX's memory you used:
  36 hyphenation exceptions out of 8191
  94i,8n,100p,487b,1783s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 闻逊之-最优化上级报告.pdf (11 pages).
+Output written on 闻逊之-最优化上机报告.pdf (11 pages).
